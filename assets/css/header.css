@@ -1,0 +1,90 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+header::after {
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    background-image: url(../img/dots.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+.div-img {
+    margin: auto;
+    > img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+}
+.title {
+    font-family: "Neue Machina";
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+.ul-list {
+    padding: 0;
+ 
+}
+.list {
+    list-style-type: none;
+
+}
+.list::before {
+    content: "";
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: .5rem;
+    transform: translateY(4px);
+}
+.student::before {
+    background-image: url(../img/aprendizado.svg);
+}
+.full::before {
+    background-image: url(../img/layers.svg);
+}
+.job::before {
+    background-image: url(../img/work.svg);
+}
+.phone::before {
+    background-image: url(../img/phone.svg);
+}
+.email::before {
+    background-image: url(../img/mail.svg);
+    
+}
+@media screen and (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 1rem;
+    }
+    .div-img {
+        margin: 0;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .ul-list {
+        
+    }
+    .list {
+        
+        padding: .3rem;
+        width: 100%;
+
+    }
+    .list::before {
+        
+    }
+    
+}

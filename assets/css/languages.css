@@ -1,0 +1,22 @@
+.languages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+    list-style: none;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.languages li::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background-image: url(../img/check.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: .5rem;
+    transform: translateY(3px);
+}
